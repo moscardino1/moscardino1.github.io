@@ -20,7 +20,6 @@ h1, h2, h3, h4, h5, h6 {
 /* Header styles */
 header_title {
     text-align: center;
-    margin-bottom: 20px;
 }
 
 h1 {
@@ -167,7 +166,7 @@ body {
 }
 
 footer {
-    color: #ff0000;
+    color: #000000;
 }
 
 
@@ -213,3 +212,17 @@ nav ul li a:hover {
 nav ul li a.active {
     background-color: #4fad7b; /* Darker background color for active link */
 }
+
+        /* Style for the headers */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+             z-index: 1000; /* Ensure the header is on top of everything */
+        }
+
+        /* Style for the main content */
+        main {
+            padding-top: 80px; /* Adjust based on the header height */
+        }

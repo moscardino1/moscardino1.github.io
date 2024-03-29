@@ -31,7 +31,8 @@
 
         /* Style for the swiper slide */
         .swiper-slide {
-            width: 100%;
+            width: auto; /* Set width to auto */
+            overflow: hidden; /* Hide overflow */
         }
 
         /* Style for the pagination */
@@ -53,12 +54,9 @@
 
     <main>
         <div class="container">
-            <h1>My Projects</h1>
+            <h1>Projects</h1>
 
             <!-- Display both iframes on the page -->
-             
-
-            <!-- Swiper -->
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -97,7 +95,7 @@
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 30,
             pagination: {
                 el: '.swiper-pagination',
