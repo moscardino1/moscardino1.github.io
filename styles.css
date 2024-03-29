@@ -1,96 +1,215 @@
-/* Reset default margin and padding */
-* {
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9;
 }
 
 .container {
     max-width: 800px;
-    margin: 20px auto;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
     padding: 20px;
+    position: relative; /* Add this line */
+    z-index: 1; /* Add this line */
 }
 
-header {
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header styles */
+header_title {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 h1 {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 5px;
+    font-size: 36px;
+    margin: 10px 0;
 }
 
 h2 {
-    font-size: 1.5em;
-    color: #666;
+    font-size: 24px;
+    margin: 5px 0;
 }
 
-.top-section {
-    display: flex;
-    justify-content: space-between;
+/* Footer styles */
+footer {
+    text-align: center;
     margin-top: 20px;
+    font-size: 14px;
 }
 
-.centered-section {
-    flex-basis: 45%;
-}
-
-.left-column,
-.right-column {
-    flex-basis: 45%;
-}
-
+/* Section styles */
 section {
     margin-bottom: 20px;
 }
 
-h3 {
-    color: #333;
-    font-size: 1.2em;
+/* Contact section */
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Make the container a flex container */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+    justify-content: center; /* Center the items horizontally */
+}
+
+.contact-list li {
+    margin-right: 20px; /* Add some space between items */
+}
+
+.contact-list li:last-child {
+    margin-right: 0; /* Remove margin from the last item to prevent extra space */
+}
+
+
+/* Description section */
+.description p {
+    text-align: justify;
+}
+
+/* Experience section */
+.experience-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.experience-list li {
+    margin-bottom: 20px;
+}
+
+/* Education section */
+.education-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.education-list li {
+    margin-bottom: 20px;
+}
+
+/* Key skills section */
+.key-skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.key-skills ul li {
     margin-bottom: 10px;
 }
 
-h4 {
-    color: #666;
-    font-size: 1.1em;
-    margin-bottom: 5px;
+/* Certifications section */
+.certifications ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-ul {
-    list-style: none;
-    padding-left: 0;
+.certifications ul li {
+    margin-bottom: 10px;
 }
 
-ul li {
-    margin-bottom: 5px;
+/* Coding skills section */
+.coding-skills ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-a {
-    color: #007bff;
-    text-decoration: none;
+.coding-skills ul li {
+    margin-bottom: 10px;
 }
 
-a:hover {
-    text-decoration: underline;
+/* Languages section */
+.languages ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.page-break {
-    page-break-before: always;
+.languages ul li {
+    margin-bottom: 10px;
+}
+
+/* Personal interests section */
+.personal-interests ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.personal-interests ul li {
+    margin-bottom: 10px;
+}
+
+/* Custom flair */
+body {
+    overflow-x: hidden;
+}
+
+.parallax-bg {
+    background-image: url('sci-fi-background.jpg');
+    background-size: cover;
+    background-attachment: fixed; /* Change this line */
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.container {
+    background-color: rgba(233, 233, 233, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    position: relative; /* Add this line */
+    z-index: 1; /* Add this line */
 }
 
 footer {
-    text-align: center;
-    margin-top: 20px;
-    color: #666;
-    font-size: 0.9em;
+    color: #ff0000;
+}
+
+
+
+/* header */
+/* Style for the header */
+header {
+    background-color: #acf1d7; /* Dark background color */
+    padding: 20px 0; /* Add padding */
+}
+
+/* Style for the navigation menu */
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    text-align: center; /* Center the menu items */
+}
+
+/* Style for the menu items */
+nav ul li {
+    display: inline-block; /* Display menu items inline */
+    margin-right: 20px; /* Add space between menu items */
+}
+
+/* Style for the menu item links */
+nav ul li a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 16px; /* Font size */
+    padding: 10px 20px; /* Add padding */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background color and text color */
+}
+
+/* Hover effect for menu item links */
+nav ul li a:hover {
+    background-color: #4f6653; /* Darker background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+/* Active link styling */
+nav ul li a.active {
+    background-color: #4fad7b; /* Darker background color for active link */
 }

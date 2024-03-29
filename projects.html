@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        /* Style for the iframes */
+        .project-iframe {
+            width: 100%;
+            height: 500px; /* Initial height, can be adjusted as needed */
+            border: none; /* Remove border */
+        }
+
+        /* Style for the container of the iframes */
+        .project-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        /* Style for the swiper container */
+        .swiper-container {
+            width: 100%;
+            height: auto; /* Make the height dynamic */
+            margin-top: 30px;
+        }
+
+        /* Style for the swiper slide */
+        .swiper-slide {
+            width: 100%;
+        }
+
+        /* Style for the pagination */
+        .swiper-pagination {
+            position: relative;
+            bottom: 10px;
+        }
+
+        /* Style for the project description */
+        .project-description {
+            margin-top: 15px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <!-- Include the header using JavaScript -->
+    <script src="header.js"></script>
+
+    <main>
+        <div class="container">
+            <h1>My Projects</h1>
+
+            <!-- Display both iframes on the page -->
+             
+
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="project">
+                            <iframe class="project-iframe" src="https://apnea-test.web.app/" frameborder="0"></iframe>
+                            <div class="project-description">
+                                <h2>Apnea Music</h2>
+                                <p>This web application interacts with the Spotify API, Musixmatch API, and Hugging Face API for sentiment and emotion analysis.</p>
+                                <p><a href="https://github.com/moscardino1/apnea-test">View on GitHub</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project">
+                            <iframe class="project-iframe" src="https://a-andamo.web.app/login.html" frameborder="0"></iframe>
+                            <div class="project-description">
+                                <h2>Andamo</h2>
+                                <p>This web application is designed to display points of interest from a Google Sheet on a map and in a list view.</p>
+                                <p><a href="https://github.com/moscardino1/AndamoWebsite">View on GitHub</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more slides if needed -->
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Include the footer using JavaScript -->
+    <script src="footer.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+</html>
