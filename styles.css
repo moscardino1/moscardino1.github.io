@@ -226,3 +226,6 @@ nav ul li a.active {
         main {
             padding-top: 80px; /* Adjust based on the header height */
         }
+        html {
+            scroll-behavior: smooth;
+          }
