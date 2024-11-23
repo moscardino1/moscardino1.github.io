@@ -174,6 +174,21 @@ section {
     border-radius: 25px;
     font-size: 0.9rem;
 }
+/* Skills and Interests */
+.key-contact ul, .coding-skills ul, .languages ul, .personal-interests ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.key-contact li, .coding-skills li, .languages li, .personal-interests li {
+    padding: 0.5rem 1rem;
+    background: rgb(228, 221, 221);
+    color: white;
+    border-radius: 25px;
+    font-size: 0.9rem;
+}
+
 
 /* Animations */
 @keyframes fadeInUp {
@@ -195,48 +210,8 @@ section {
     opacity: 0.1;
     transform: translateZ(0);
 }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    :root {
-        --header-height: 120px; /* Adjust header height */
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
-        padding: 1rem 0;
-    }
-
-    .contact-list {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    section {
-        margin: 2rem 0;
-    }
-}
-
-/* Extra Small Screens */
-@media (max-width: 350px) {
-    :root {
-        --header-height: 140px; /* Further adjust for small screens */
-    }
-
-    nav ul li a {
-        font-size: 0.9rem;
-        padding: 0.3rem 0.6rem;
-    }
-}
-
-/* Larger Screens */
-@media (min-width: 1400px) {
-    :root {
-        --container-width: 1400px; /* Adjust container width for larger screens */
-    }
-}
+ 
+ 
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
@@ -334,54 +309,6 @@ section:hover {
     transform: translateY(-10px);
     box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
 }
-
-h2 {
-    font-size: 2rem;
-    color: #2d3436;
-    margin-bottom: 1.5rem;
-    border-left: 4px solid #00b894;
-    padding-left: 1rem;
-}
-
-.card {
-    margin-bottom: 1.5rem;
-    padding: 1rem 0;
-    border-bottom: 1px solid #ececec;
-}
-
-.card:last-child {
-    border-bottom: none;
-}
-
-.card h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #2d3436;
-}
-
-.card p {
-    font-size: 1rem;
-    color: #636e72;
-    margin: 0.5rem 0;
-}
-
-.card ul {
-    list-style: none;
-    padding-left: 0;
-    margin-top: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-}
-
-.card ul li {
-    background: #00b894;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-size: 0.85rem;
-}
-
 /* Key Skills */
 .key-skills ul {
     display: flex;
@@ -401,22 +328,7 @@ h2 {
 .key-skills ul li:hover {
     background: #00b894;
 }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2.5rem;
-    }
-
-    section {
-        padding: 1.5rem;
-    }
-
-    .bio img {
-        width: 140px;
-        height: 140px;
-    }
-}
+ 
     /* Style for bio section */
     .bio {
         margin-bottom: 20px;
@@ -490,3 +402,5 @@ h2 {
         margin-top: 15px;
         font-style: italic;
     }
+
+    
