@@ -15,67 +15,72 @@
     <title>Bio</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Style for bio section */
-        .bio {
-            margin-bottom: 20px;
-        }
-
-        .bio p {
-            margin-bottom: 10px;
-        }
-
-        /* Style for contact section */
-        .contact-info {
-            margin-top: 20px;
-        }
-
-        .contact-info p {
-            margin-bottom: 10px;
-        }
-
-        .contact-info a {
-            display: inline-block;
-            margin-right: 10px;
-            color: #333;
-            text-decoration: none;
-        }
-
-        /* Style for responsive images */
-        img {
-            max-width: 100%;
-            height: auto;
-        }
+    
     </style>
 </head>
 <body>
     <!-- Include the header using JavaScript -->
     <script src="header.js"></script>
-
-    <main>
-        <div class="container">
+        <main class="container">
+            <h1>Ciao!</h1>
 
             <!-- Bio Section -->
-            <div class="bio">
-                <h1>Ciao!</h1>
-                <p>I am Alessandro! Originally from Tuscany, Italy, I'm a forward-thinking Data Engineer Manager currently based in Toronto, Canada. 
-                    With over 10 years of international experience spanning Europe and North America, I specialize in Cloud Migrations, Data & Analytics. </p>
-                <p>Outside of work, I enjoy hiking, staying abreast of financial news, and playing/exploring new music.</p>
-                <img src="pss.png" alt="Home">
-            </div>
-
-            <!-- Contact Info -->
-            <div class="contact-info">
+            <section class="bio">
+                <img src="pss.png" alt="Profile Picture">
+                <p>I am Alessandro! Originally from Tuscany, Italy, I'm a forward-thinking Data Engineer Manager currently based in Toronto, Canada. With over 10 years of international experience spanning Europe and North America, I specialize in Cloud Migrations, Data & Analytics.</p>
+            </section>
+         
+            <!-- Experience Section -->
+            <section>
                 <h2>Contact Alessandro:</h2>
-                <p><a href="mailto:alessandrocarli90@gmail.com">✉️ alessandrocarli90@gmail.com</a></p>
-                <p><a href="tel:+16478547118">📞 +1 (647) 854-7118</a></p>
-                <p><a href="https://linkedin.com/in/alessandrocarli90">🔗 LinkedIn</a></p>
-                <p><a href="https://github.com/moscardino1">🔗 GitHub</a></p>
-                <p><a href="https://twitter.com/moscardino8">🔗 Twitter</a></p>
-                <p><a href="http://last.fm/user/carlialessandro">🔗 Lasfm Profile</a></p>
-            </div>
-            
-        </div>
-    </main>
+                <div class="card">
+                        <li><a href="mailto:alessandrocarli90@gmail.com">✉️ alessandrocarli90@gmail.com</a></li>
+                        <li><a href="https://linkedin.com/in/alessandrocarli90">🔗 LinkedIn</a></li>
+                        <li><a href="https://github.com/moscardino1">🔗 GitHub</a></li>
+                        <li><a href="https://twitter.com/moscardino8">🔗 Twitter</a></li>
+                        <li><a href="http://last.fm/user/carlialessandro">🔗 Lasfm Profile</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <h2>Professional Experience</h2>
+                <div class="card">
+                    <h3>Data Engineering Associate Manager</h3>
+                    <p>Accenture Technology: Data AI | Apr 2015 – Present</p>
+                    <p>📍 Toronto, Canada & Rome, Italy</p>
+                    <ul>
+                        <li>Azure Databricks: Developed PySpark-based pipelines for banking clients.</li>
+                        <li>Google Cloud: Built CI/CD pipelines for telecom clients.</li>
+                        <li>Looker Migration: Led a successful dashboard migration for a telco client.</li>
+                        <li>NoSQL Architecture: Delivered scalable real-time applications.</li>
+                    </ul>
+                </div>
+            </section>
+    
+            <!-- Skills Section -->
+            <section>
+                <h2>Key Skills</h2>
+                <div class="key-skills">
+                    <ul>
+                        <li>Cloud Migration</li>
+                        <li>Data Warehousing</li>
+                        <li>Business Intelligence</li>
+                        <li>Prompt Engineering</li>
+                        <li>Agile Project Management</li>
+                    </ul>
+                </div>
+            </section>
+    
+            <!-- Certifications Section -->
+            <section>
+                <h2>Certifications</h2>
+                <ul>
+                    <li>Google: Professional Data Engineer</li>
+                    <li>Azure Fundamentals (AZ-900)</li>
+                    <li>SAS Predictive Modeler E.M.</li>
+                </ul>
+            </section>   
+        </main>
 
     <!-- Include the footer using JavaScript -->
     <script src="footer.js"></script>
