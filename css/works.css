@@ -53,3 +53,5 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+button.view-more { background-color: var(--bg-primary)}
