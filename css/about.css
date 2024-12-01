@@ -5,6 +5,7 @@
     padding: 2rem;
 }
 
+
 .section-title {
     border-bottom: 4px solid var(--border-color);
     padding-bottom: 0.5rem;
@@ -109,4 +110,12 @@ footer {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+}
+
+.about {
+    display: flex;
+    gap: 3rem;
+    margin: 4rem 0;
+    padding: 2rem;
+    border: 2px solid var(--border-color);
 }
