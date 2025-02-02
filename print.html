@@ -1,24 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-                <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QVNR68LWHR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-QVNR68LWHR');
-</script>
+            <!-- Google tag (gtag.js) -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-QVNR68LWHR"></script>
+            <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-QVNR68LWHR');
+            </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alessandro - Resume</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/works.css">
     <link rel="stylesheet" href="css/about.css">
-    <script defer src="layout/layout.js"></script>
+    <link rel="icon" href="images/icona.png" type="image/x-icon">
+
+    <title>🌊Alessandro Carli🌊</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Load layout first -->
+    
+    <!-- Content sections -->
+    <section class="hero">
+        <h1>Alessandro Carli</h1>
+        <p>Data Engineering Manager | Cloud Migration & Analytics Specialist | Transforming Data into Strategic Insights</p>
+    </section>
 
+    <section id="about" class="about">
+        <div class="personal-info">
+            <h3>Email</h3>
+            <p>
+                <a href="mailto:alessandrocarli90@gmail.com">alessandrocarli90@gmail.com</a>
+            </p>
+        </div>
+        <div class="personal-info">
+            <h3>Professional Networks</h3>            
+                <p>
+                    <a href="https://www.linkedin.com/in/alessandrocarli90/" target="_blank">LinkedIn Profile</a>
+                </p>
+                <p>
+                    <a href="https://github.com/moscardino1" target="_blank">GitHub Profile</a>
+                </p>
+        </div>
+    </section>
+    
+
+    <section id="about" class="about">
+        <div class="profile-pic">
+            <img src="images/icona.png" alt="Your Name">
+        </div>
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p>A forward-thinking Data Engineering Manager with over 10 years of international experience, specializing in Cloud Migrations, Data Engineering, and Analytics across multiple industries.</p>
+            
+            <h3>Key Skills</h3>
+            <div class="skills">
+                <span class="skill-tag">Cloud Migration</span>
+                <span class="skill-tag">Data Warehousing</span>
+                <span class="skill-tag">Business Intelligence</span>
+                <span class="skill-tag">Prompt Engineering</span>
+                <span class="skill-tag">Agile Project Management</span>
+            </div>
+        </div>
+        <!-- <div class="personal-info">
+            <h3>Contact</h3>
+            <p>📍 Toronto, Canada</p>
+            <p>🔗 Open to professional opportunities</p>
+        </div> -->
+        
+    </section>
+    
+   
     <section class="about-section">
         <h2 class="section-title">Professional Experience</h2>
         <div class="experience-item">
@@ -31,10 +85,10 @@
                 <li>Moved from Accenture Italy to Canadian practice in May 2021</li>
             </ul>
         </div>
-        <a href="javascript:void(0)" id="explore-button" class="project-preview">EXPLORE PROJECTS →</a>
+        <a href="javascript:void(0)" id="explore-button" class="project-preview" style="display: none;"></a>
 
     </section>
-    <section id="projects" class="about-section" style="display: none;">
+    <section id="projects" class="about-section" >
         <h2 class="section-title">Key Projects</h2>
         <div id="projects-grid" class="projects-grid">
             <!-- Project cards will be inserted here -->
@@ -97,7 +151,7 @@
 
 <!-- Add to index.html, resume.html head section -->
 <script src="js/fetchwork.js"></script>
-
-
+    
+    <!-- Load scripts after content -->
 </body>
 </html>

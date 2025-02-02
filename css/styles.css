@@ -167,3 +167,19 @@ footer {
         margin-bottom: 1rem;
     }
 }
+
+.download-btn {
+    background-color: var(--accent-color);
+    color: var(--bg-primary);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.download-btn:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}

@@ -16,11 +16,16 @@
 
     <title>🌊Alessandro Carli🌊</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script defer src="layout/layout.js"></script>
+    <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.min.js"></script>
 
+    <script defer src="js/fetch_rando_projects.js"></script>
+    
 </head>
 <body>
-    <script src="layout/layout.js"></script>
-
+    <!-- Load layout first -->
+    
+    <!-- Content sections -->
     <section class="hero">
         <h1>Alessandro Carli</h1>
         <p>Data Engineering Manager | Cloud Migration & Analytics Specialist | Transforming Data into Strategic Insights</p>
@@ -58,8 +63,13 @@
             <!-- Projects will be dynamically loaded here -->
         </div>
     </section>
-        
-    <script src="js/fetch_rando_projects.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <!-- Add jsPDF before other scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 
+    <script  src="js/downloadResume.js"></script>  
+
+    <!-- Load scripts after content -->
 </body>
 </html>
